@@ -1,7 +1,7 @@
 import csv
 
 def load_events(file_path):
-    """Đọc sự kiện từ file CSV."""
+    
     events = {}
     with open(file_path, mode='r', encoding='utf-8') as file:
         reader = csv.reader(file)
@@ -12,7 +12,7 @@ def load_events(file_path):
     return events
 
 def load_players(file_path):
-    """Đọc cầu thủ từ file CSV."""
+    
     players = {}
     with open(file_path, mode='r', encoding='utf-8') as file:
         reader = csv.reader(file)
@@ -28,7 +28,7 @@ def load_players(file_path):
     return players
 
 def load_rules(file_path):
-    """Đọc các quy tắc từ file CSV."""
+    
     rules = []
     with open(file_path, mode='r', encoding='utf-8') as file:
         reader = csv.reader(file)
@@ -40,13 +40,13 @@ def load_rules(file_path):
     return rules
 
 def save_rules(file_path, rules):
-    """Lưu các quy tắc mới vào file CSV."""
+    
     with open(file_path, mode='w', encoding='utf-8', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(["events", "player_id"])  # Ghi tiêu đề
         for rule in rules:
             writer.writerow(rule[0] + [rule[1]])  # Ghi mỗi rule
-# events.py
+
 def save_events(file_path, events):
     """Lưu danh sách sự kiện vào file CSV."""
     try:
