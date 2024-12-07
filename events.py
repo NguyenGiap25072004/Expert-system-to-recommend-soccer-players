@@ -48,7 +48,7 @@ def save_rules(file_path, rules):
             writer.writerow(rule[0] + [rule[1]])  # Ghi mỗi rule
 
 def save_events(file_path, events):
-    """Lưu danh sách sự kiện vào file CSV."""
+    
     try:
         with open(file_path, mode='w', newline='', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile)
