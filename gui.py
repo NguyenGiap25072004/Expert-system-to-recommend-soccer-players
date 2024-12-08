@@ -52,8 +52,12 @@ def create_gui():
         print("Error loading image:", e)
         
     
+# Khung sự kiện
     frame_events = tk.Frame(root, bg="#f8f8ff", bd=2, relief=tk.GROOVE)
     frame_events.grid(row=0, column=0, rowspan=2, sticky="ns", padx=10, pady=10)
+    # Danh sách sự kiện với thanh tìm kiếm
+    search_event_entry = tk.Entry(frame_events, width=30)
+    search_event_entry.pack(pady=5)
     tk.Label(frame_events, text="CÁC ĐẶC ĐIỂM CẦU THỦ", font=("Arial", 14), bg="#f8f8ff", fg="#000080").pack(pady=5)
 
     event_listbox = tk.Listbox(frame_events, selectmode=tk.MULTIPLE, width=30, height=25, font=("Arial", 12))
@@ -63,7 +67,7 @@ def create_gui():
 
     tk.Button(frame_events, text="Thêm", font=("Arial", 12), bg="#00a2ed", fg="white",
               command=lambda: add_selected_events(event_listbox, selected_event_listbox)).pack(pady=5)
-    
+    # Thêm nút "Thêm", "Chỉnh sửa", "Xóa"
     btn_add = tk.Button(frame_events, text="Thêm", command=lambda: add_event(event_listbox), bg="lightblue", width=15)
     btn_add.pack(side="left", padx=10, pady=5)
 
@@ -72,6 +76,16 @@ def create_gui():
 
     btn_delete = tk.Button(frame_events, text="Xóa", command=lambda: delete_event(event_listbox), bg="lightcoral", width=15)
     btn_delete.pack(side="left", padx=10, pady=5)
+    
+    
+    def search_events():
+        query = search_event_entry.get().lower()
+        event_listbox.delete(0, tk.END)
+        for event_name in events.values():
+            if query in event_name.lower():
+                event_listbox.insert(tk.END, event_name)
+
+    search_event_entry.bind("<KeyRelease>", lambda e: search_events())
     
     frame_selected = tk.Frame(root, bg="#fffaf0", bd=2, relief=tk.GROOVE)
     frame_selected.grid(row=0, column=1, rowspan=2, sticky="ns", padx=10, pady=10)
