@@ -52,10 +52,10 @@ def create_gui():
         print("Error loading image:", e)
         
     
-# Khung sự kiện
+
     frame_events = tk.Frame(root, bg="#f8f8ff", bd=2, relief=tk.GROOVE)
     frame_events.grid(row=0, column=0, rowspan=2, sticky="ns", padx=10, pady=10)
-    # Danh sách sự kiện với thanh tìm kiếm
+   
     search_event_entry = tk.Entry(frame_events, width=30)
     search_event_entry.pack(pady=5)
     tk.Label(frame_events, text="CÁC ĐẶC ĐIỂM CẦU THỦ", font=("Arial", 14), bg="#f8f8ff", fg="#000080").pack(pady=5)
@@ -67,7 +67,7 @@ def create_gui():
 
     tk.Button(frame_events, text="Thêm", font=("Arial", 12), bg="#00a2ed", fg="white",
               command=lambda: add_selected_events(event_listbox, selected_event_listbox)).pack(pady=5)
-    # Thêm nút "Thêm", "Chỉnh sửa", "Xóa"
+  
     btn_add = tk.Button(frame_events, text="Thêm", command=lambda: add_event(event_listbox), bg="lightblue", width=15)
     btn_add.pack(side="left", padx=10, pady=5)
 
