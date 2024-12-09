@@ -1,13 +1,171 @@
-player_id,name,position,country,age
-b1,Lê Chí Ngọc,Tiền đạo,Việt Nam,25
-b2,Bùi Huy Kiên,Tiền vệ,Việt Nam,22
-b3,Đào Phạm Trí Dũng,Hậu vệ,Việt Nam,28
-b4,Đặng Văn Lâm,Thủ môn,Việt Nam,30
-b5,Nguyễn Hoàng Đức,Tiền đạo,Việt Nam,27
-b6,Nguyễn Xuân Son,Tiền vệ,Việt Nam,23
-b7,Hoa Phương Chi,Hậu vệ,Việt Nam,26
-b8,Vũ Thị Thanh Trang,Tiền đạo,Việt Nam,24
-b9,Nguyễn Cảnh Hưng,Thủ môn,Việt Nam,29
-b10,Nguyễn Thị Mai Anh,Tiền vệ,Việt Nam,21
-b11, Giáp, Tiền vệ, Việt Nam, 20
-b12, C.Palmer, Tiền vệ, Anh, 22
+player_id,name,position,country,age,overall
+b1,I. McLoughlin,GK,Vietnam,22,57
+b2,A. Kelly-Heald,GK,Vietnam,19,53
+b3,A. Gruaud,GK,Vietnam,19,56
+b4,A. Al Ouwiradi,GK,Vietnam,22,54
+b5,J. Copland,GK,Vietnam,17,51
+b6,M. Anchor,GK,Vietnam,19,51
+b7,T. Jansink,GK,Vietnam,21,56
+b8,S. Suresh,GK,Vietnam,23,54
+b9,L. Klußmann,GK,Vietnam,21,56
+b10,A. Kostrzewski,GK,Vietnam,22,57
+b11,J. Cumming,GK,Vietnam,24,68
+b12,M. Lotka,GK,Vietnam,23,68
+b13,J. Beadle,GK,Vietnam,19,69
+b14,M. Penders,GK,Vietnam,18,66
+b15,M. Lotka,GK,Vietnam,23,68
+b16,Joel Pereira,GK,Vietnam,28,67
+b17,R. Fährmann,GK,Vietnam,35,69
+b18,L. Bergström,GK,Vietnam,21,63
+b19,I. Grbić,GK,Vietnam,28,73
+b20,Bao Yaxiong,GK,Vietnam,27,68
+b21,Diogo Costa,GK,Vietnam,24,84
+b22,B. Verbruggen,GK,Vietnam,21,77
+b23,C. Kelleher,GK,Vietnam,25,78
+b24,G. Bazunu,GK,Vietnam,22,73
+b25,M. Vandevoordt,GK,Vietnam,22,75
+b26,G. Kobel,GK,Vietnam,26,88
+b27,Robert Sánchez,GK,Vietnam,26,79
+b28,Agirrezabala,GK,Vietnam,23,77
+b29,G. Restes,GK,Vietnam,19,78
+b30,De Gea,GK,Vietnam,33,84
+b31,D. Seimen,GK,Vietnam,18,65
+b32,A. Bencze,GK,Vietnam,20,62
+b33,André Gomes,GK,Vietnam,19,65
+b34,Ayesa,GK,Vietnam,22,63
+b35,C. Boyce-Clarke,GK,Vietnam,21,61
+b36,K. Peersman,GK,Vietnam,19,61
+b37,A. Pierre,GK,Vietnam,22,60
+b38,Iturbe,GK,Vietnam,20,66
+b39,Luis López,GK,Vietnam,23,63
+b40,L. Southwood,GK,Vietnam,26,65
+b41,J. Williams,DF,England,21,61
+b42,A. Motaraghebjafarpour,DF,England,21,60
+b43,I. Aalberg,DF,England,19,53
+b44,R. Priso,DF,England,21,60
+b45,R. Hutchinson,DF,England,24,61
+b46,T. Russell,DF,England,24,61
+b47,S. Aljofree,DF,England,19,58
+b48,S. Parker,DF,England,17,57
+b49,P. Kwiatkowski,DF,England,17,56
+b50,N. Al Ghulaimish,DF,England,19,52
+b51,Asencio,DF,England,21,61
+b52,N. Mbamba,DF,England,19,65
+b53,L. Vušković,DF,England,17,66
+b54,P. Reyna,DF,England,21,69
+b55,L. Vušković,DF,England,17,66
+b56,L. Gechter,DF,England,20,69
+b57,F. Chiarodia,DF,England,19,64
+b58,B. Koumetio,DF,England,21,62
+b59,Pubill,DF,England,21,71
+b60,T. Mykhavko,DF,England,19,69
+b61,Kim Min Jae,DF,England,27,83
+b62,W. Saliba,DF,England,23,87
+b63,J. Kiwior,DF,England,24,76
+b64,J. Hato,DF,England,18,76
+b65,Arnau Martínez,DF,England,21,79
+b66,Fresneda,DF,England,19,73
+b67,M. Kerkez,DF,England,20,78
+b68,Gabriel,DF,England,26,86
+b69,L. Geertruida,DF,England,23,79
+b70,J. Timber,DF,England,23,79
+b71,L. Hall,DF,England,19,75
+b72,R. Lewis,DF,England,19,78
+b73,M. Zanotti,DF,England,21,73
+b74,P. Dorgu,DF,England,19,66
+b75,T. Lamptey,DF,England,23,74
+b76,I. Maatsen,DF,England,22,79
+b77,M. van Ewijk,DF,England,23,74
+b78,N. Kreuzer,DF,England,31,65
+b79,N. Kreuzer,DF,England,31,65
+b80,N. Brown,DF,England,21,69
+b81,Andrey Santos,MF,France,20,75
+b82,Muniain,MF,France,31,79
+b83,A. Nusa,MF,France,19,74
+b84,K. Havertz,MF,France,25,83
+b85,Lamine Yamal,MF,France,16,83
+b86,J. Bellingham,MF,France,21,90
+b87,Palhinha,MF,France,28,85
+b88,C. Palmer,MF,France,22,86
+b89,T. Kubo,MF,France,23,81
+b90,T. AlmadaCF,MF,France,22,80
+b91,S. Nypan,MF,France,17,66
+b92,A. Diao Diaoune,MF,France,18,71
+b93,Adrián Liso,MF,France,19,69
+b94,M. Moore,MF,France,16,66
+b95,A. Devine,MF,France,19,66
+b96,L. Ulrich,MF,France,19,63
+b97,F. Onyeka,MF,France,17,60
+b98,Marc Bernal,MF,France,17,64
+b99,B. Ibrahim,MF,France,19,61
+b100,P. Aning,MF,France,20,62
+b101,J. Bellingham,MF,France,18,71
+b102,Adama Traoré,MF,France,28,76
+b103,R. Onyedika,MF,France,23,75
+b104,K. Lisztes,MF,France,19,69
+b105,C. Patiño,MF,France,20,68
+b106,S. Biuk,MF,France,21,72
+b107,T. Iroegbunam,MF,France,21,71
+b108,C. Casadei,MF,France,21,72
+b109,J. Correa,MF,France,29,74
+b110,R. Tapia,MF,France,28,79
+b111,R. Bardghji,MF,France,18,70
+b112,S. Pafundi,MF,France,18,69
+b113,A. Schjelderup,MF,France,20,72
+b114,Carlos Forbs,MF,France,20,70
+b115,Y. Minteh,MF,France,19,74
+b116,Roger Fernandes,MF,France,18,73
+b117,Roger Fernandes,MF,France,18,73
+b118,C. Rigg,MF,France,17,67
+b119,G. Kuol,MF,France,19,64
+b120,E. Mbappé,MF,France,17,63
+b121,D. Nigg,MF,France,19,55
+b122,A. Álvarez,MF,France,18,59
+b123,M. Scott,MF,France,19,50
+b124,O. Edwards,MF,France,23,61
+b125,G. Sloane-Rodrigues,MF,France,16,53
+b126,D. O'Brien-Brady,MF,France,20,57
+b127,E. Tepecik,MF,France,19,55
+b128,D. Barton,MF,France,19,56
+b129,C. Andersen,MF,France,19,56
+b130,L. Molina,MF,France,16,56
+b131,A. Isak,CF,Belguim,85,24
+b132,K. Mbappé,CF,Belguim,91,25
+b133,S. Giménez,CF,Belguim,79,23
+b134,R. Højlund,CF,Belguim,78,21
+b135,D. Núñez,CF,Belguim,82,25
+b136,N. Jackson,CF,Belguim,81,23
+b137,V. Gyökeres,CF,Belguim,85,26
+b138,B. Šeško,CF,Belguim,80,21
+b139,M. Salah,CF,Belguim,89,32
+b140,M. Rashford,CF,Belguim,81,26
+b141,Raúl Asencio,CF,Belguim,64,25
+b142,M. Lazetić,CF,Belguim,65,19
+b143,A. Obando,CF,Belguim,65,18
+b144,M. Burstow,CF,Belguim,61,20
+b145,W. Grigg,CF,Belguim,64,32
+b146,T. Walczak,CF,Belguim,54,18
+b147,M. Kowalski,CF,Belguim,56,18
+b148,Lautaro,CF,Belguim,65,22
+b149,K. Bowie,CF,Belguim,64,21
+b150,J. Benteke,CF,Belguim,61,23
+b151,V. Boniface,CF,Belguim,82,23
+b152,W. Weghorst,CF,Belguim,77,31
+b153,Cristiano Ronaldo,CF,Belguim,85,39
+b154,G. Scamacca,CF,Belguim,79,25
+b155,G. Scamacca,CF,Belguim,79,25
+b156,H. Kane,CF,Belguim,90,30
+b157,E. Ferguson,CF,Belguim,73,19
+b158,T. Abraham,CF,Belguim,78,26
+b159,R. Lukaku,CF,Belguim,82,31
+b160,M. Balotelli,CF,Belguim,75,33
+b161,P. Brunner,CF,Belguim,65,18
+b162,M. Melia,CF,Belguim,62,16
+b163,D. Scarlett,CF,Belguim,65,20
+b164,A. Sarco,CF,Belguim,64,18
+b165,G. Amanda,CF,Belguim,60,23
+b166,T. Cervera,CF,Belguim,65,21
+b167,E. Ekong,CF,Belguim,63,22
+b168,M. Toure,CF,Belguim,58,18
+b169,G. Ambrosino,CF,Belguim,65,20
+b170,B. Parkinson,CF,Belguim,57,19
