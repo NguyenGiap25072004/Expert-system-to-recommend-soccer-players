@@ -18,12 +18,13 @@ def load_players(file_path):
         reader = csv.reader(file)
         next(reader)  # Bỏ qua dòng tiêu đề
         for row in reader:
-            player_id, name, position, country, age = row
+            player_id, name, position, country, age, overall = row
             players[player_id] = {
                 'name': name,
                 'position': position,
                 'country': country,
-                'age': int(age)
+                'age': int(age),
+                'opverall': int(overall)
             }
     return players
 
