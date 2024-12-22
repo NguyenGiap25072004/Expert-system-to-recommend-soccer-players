@@ -145,3 +145,13 @@ Midterm project assignment for introductory artificial intelligence course
 5. Illustrative example
 
    - Suppose the user selects the characteristics: "Bipedal", "Good technique", "High physical strength". The system will search for rules containing corresponding events (e.g. a1, a2, a3) and suggest suitable players (e.g. b1).
+  
+Note: Deployment: 
+
+You need to download the python padas and pillow libraries first
+pip install pandas
+pip install 
+
+Then download all the code above and run the main.py file
+
+Good luck <3!
