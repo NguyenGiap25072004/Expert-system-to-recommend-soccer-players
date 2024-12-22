@@ -41,13 +41,13 @@ Midterm project assignment for introductory artificial intelligence course
 
       + Built using the Tkinter library, providing users with the following functions:
 
-      + Select desired player characteristics.
+         + Select desired player characteristics.
 
-      + See list of suggested players.
+         + See list of suggested players.
 
-      + Add, delete, edit inference rules.
+         + Add, delete, edit inference rules.
 
-      + Add, delete, edit events (player characteristics).
+         + Add, delete, edit events (player characteristics).
 
 3. Detailed description of components
    
