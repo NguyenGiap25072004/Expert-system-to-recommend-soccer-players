@@ -1,5 +1,6 @@
 # Expert-system-to-recommend-soccer-players
 Midterm project assignment for introductory artificial intelligence course
+![image](https://github.com/user-attachments/assets/723157ac-4d31-4804-ae12-2cd47f6d40c4)
 
 1. Giới thiệu
 
