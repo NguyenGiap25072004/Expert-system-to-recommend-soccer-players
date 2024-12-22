@@ -152,7 +152,7 @@ Note: Deployment:
 
    + pip install pandas
 
-   + pip install 
+   + pip install pillow
 
 - Then download all the code above and run the main.py file
 
