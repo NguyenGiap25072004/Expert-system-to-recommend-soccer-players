@@ -123,17 +123,17 @@ Midterm project assignment for introductory artificial intelligence course
 
       + a31: Ability to score goals from a distance
 
-- Forward:
+   - Forward:
 
-   + a32: Good goalscoring instincts
+      + a32: Good goalscoring instincts
 
-   + a33: Ability to move intelligently without the shadow
+      + a33: Ability to move intelligently without the shadow
 
-   + a34: Ability to create space
+      + a34: Ability to create space
 
-   + a35: Diverse finishing skills
+      + a35: Diverse finishing skills
 
-   + a36: Ability to choose good locations
+      + a36: Ability to choose good locations
 
 
 4. Law of inference
