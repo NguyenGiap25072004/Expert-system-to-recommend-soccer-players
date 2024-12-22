@@ -86,20 +86,25 @@ a28: Accurate short passing ability
 a29: Ability to dribble to escape pressing
 a30: Good long passing ability
 a31: Ability to score goals from a distance
-Forward
-a32: Good goalscoring instincts
-a33: Ability to move intelligently without the shadow
-a34: Ability to create space
-a35: Diverse finishing skills
-a36: Ability to choose good locations
+- Forward:
+
+   + a32: Good goalscoring instincts
+
+   + a33: Ability to move intelligently without the shadow
+
+   + a34: Ability to create space
+
+   +a35: Diverse finishing skills
+
+   + a36: Ability to choose good locations
 
 
 4. Law of inference
 
-Each inference rule has the form: event1, event2, ... -> player_id
+   - Each inference rule has the form: event1, event2, ... -> player_id
 
-For example: a1, a2, a3 -> b1 means that if a player has the characteristics a1, a2, a3, the system will suggest player b1.
+   - For example: a1, a2, a3 -> b1 means that if a player has the characteristics a1, a2, a3, the system will suggest player b1.
 
 5. Illustrative example
 
-Suppose the user selects the characteristics: "Bipedal", "Good technique", "High physical strength". The system will search for rules containing corresponding events (e.g. a1, a2, a3) and suggest suitable players (e.g. b1).
+   - Suppose the user selects the characteristics: "Bipedal", "Good technique", "High physical strength". The system will search for rules containing corresponding events (e.g. a1, a2, a3) and suggest suitable players (e.g. b1).
