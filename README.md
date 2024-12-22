@@ -1,102 +1,105 @@
 # Expert-system-to-recommend-soccer-players
 Midterm project assignment for introductory artificial intelligence course
-![image](https://github.com/user-attachments/assets/723157ac-4d31-4804-ae12-2cd47f6d40c4)
 
-1. Giới thiệu
 
-Mục tiêu của hệ thống: Xây dựng một hệ thống chuyên gia có khả năng gợi ý cầu thủ bóng đá dựa trên các đặc điểm mà người dùng mong muốn.
+![Screenshot 2024-12-23 010622](https://github.com/user-attachments/assets/6b1c1be6-2b7a-4673-872e-380a0a03f45c)
 
-Lợi ích của hệ thống:
 
-Hỗ trợ người dùng tìm kiếm cầu thủ phù hợp với yêu cầu một cách nhanh chóng và hiệu quả.
+1. Introduction
 
-Cung cấp thông tin chi tiết về cầu thủ, bao gồm các thuộc tính, kỹ năng và chỉ số.
+System goal: Build an expert system capable of suggesting soccer players based on the characteristics the user desires.
 
-Giúp người dùng ra quyết định trong việc lựa chọn cầu thủ, ví dụ như trong game quản lý bóng đá hoặc tuyển chọn cầu thủ thực tế.
+System benefits:
 
-Phương pháp tiếp cận: Sử dụng phương pháp suy diễn tiến, dựa trên luật (rule-based reasoning) để gợi ý cầu thủ.
-2. Kiến trúc hệ thống
+Support users to find players that match their requirements quickly and effectively.
 
-Hệ thống bao gồm 3 thành phần chính:
+Provides detailed information about the player, including attributes, skills and stats.
 
-Cơ sở tri thức:
-Tập hợp các sự kiện (đặc điểm cầu thủ) được lưu trữ trong file events.csv.
+Helps users make decisions in player selection, for example in a football management game or real-life player selection.
 
-Tập hợp các cầu thủ và thông tin chi tiết của họ được lưu trữ trong file players.csv.
+Approach: Use rule-based reasoning to suggest players.
+2. System architecture
 
-Tập hợp các luật suy diễn, mỗi luật liên kết một tập hợp các sự kiện với một cầu thủ cụ thể, được lưu trữ trong file rules.csv.
+The system includes 3 main components:
 
-Công cụ suy diễn:
+Knowledge base:
+The set of events (player characteristics) is stored in the events.csv file.
 
-Sử dụng phương pháp suy diễn tiến để tìm ra các cầu thủ phù hợp với các sự kiện (đặc điểm) mà người dùng đã chọn.
+The set of players and their details are stored in the players.csv file.
 
-Duyệt qua các luật, kiểm tra xem tập các sự kiện đầu vào có khớp với tập sự kiện trong luật hay không. Nếu khớp, cầu thủ tương ứng trong luật sẽ được đưa vào danh sách kết quả.
+A set of inference rules, each of which associates a set of events with a specific player, is stored in the rules.csv file.
 
-Giao diện người dùng:
+Inference tools:
 
-Được xây dựng bằng thư viện Tkinter, cung cấp cho người dùng các chức năng:
+Uses forward inference to find players that match the events (characteristics) the user has selected.
 
-Chọn các đặc điểm cầu thủ mong muốn.
+Go through the rules, checking whether the set of input events matches the set of events in the rule. If there is a match, the corresponding player in the rules will be included in the results list.
 
-Xem danh sách cầu thủ được gợi ý.
+User interface:
 
-Thêm, xóa, sửa luật suy diễn.
+Built using the Tkinter library, providing users with the following functions:
 
-Thêm, xóa, sửa các sự kiện (đặc điểm cầu thủ).
+Select desired player characteristics.
 
-3. Mô tả chi tiết các thành phần
+See list of suggested players.
+
+Add, delete, edit inference rules.
+
+Add, delete, edit events (player characteristics).
+
+3. Detailed description of components
    
-Đánh giá cầu thủ qua các:
+Evaluate players through:
 
-Đặc điểm chung:
-a1: Thuận hai chân 
-a2: Kỹ thuật tốt 
-a3: Thể lực cao 
-a4: Tốc độ nhanh 
-a5: Khả năng chuyền bóng tốt 
-a6: Kỹ năng dứt điểm chính xác 
-a7: Chiều cao vượt trội 
-a8: Còn trẻ khỏe 
-a9: Khả năng phòng thủ xuất sắc 
-a10: Kỹ năng chuyền bóng dài 
-a11: Khả năng đoán tình huống tốt 
-a12: Khả năng chơi bóng đầu tốt 
-a13: Khả năng kiểm soát bóng tốt 
-a14: Khả năng lãnh đạo tốt 
-a15: Khả năng phản ứng nhanh 
-a16: Tầm nhìn tốt
-Thủ môn (Goalkeeper)
-a17: Khả năng phản xạ xuất sắc
-a18: Khả năng chỉ huy hàng phòng ngự
-a19: Kỹ năng bắt bóng bổng
-a20: Khả năng phát bóng chính xác
-a21: Kỹ năng xử lý bóng bằng chân
-Hậu vệ (Defender)
-a22: Khả năng kèm người chặt chẽ
-a23: Khả năng tắc bóng hiệu quả
-a24: Kỹ năng không chiến tốt
-a25: Khả năng hỗ trợ tấn công
-a26: Tính kỷ luật trong phòng thủ
-Tiền vệ (Midfielder)
-a27: Khả năng kiểm soát nhịp độ trận đấu
-a28: Khả năng chuyền ngắn chính xác
-a29: Khả năng rê bóng thoát pressing
-a30: Khả năng chuyền dài tốt
-a31: Khả năng ghi bàn từ xa
-Tiền đạo (Forward)
-a32: Bản năng săn bàn tốt
-a33: Khả năng di chuyển không bóng thông minh
-a34: Khả năng tạo khoảng trống
-a35: Kỹ năng dứt điểm đa dạng
-a36: Khả năng chọn vị trí tốt
+General characteristics:
+a1: Bipedal 
+a2: Good technique 
+a3: High physical strength 
+a4: Fast speed 
+a5: Good passing ability 
+a6: Accurate finishing skills 
+a7: Outstanding height 
+a8: Young and healthy 
+a9: Excellent defense ability 
+a10: Long passing skills 
+a11: Ability to predict situations well 
+a12: Good ability to play first ball 
+a13: Good ball control ability 
+a14: Good leadership ability 
+a15: Ability to react quickly 
+a16: Good vision
+Goalkeeper
+a17: Excellent reflexes
+a18: Ability to command the defense
+a19: High ball catching skill
+a20: Ability to play the ball accurately
+a21: Ball handling skills with your feet
+Defender
+a22: Ability to closely mark people
+a23: Ability to tackle effectively
+a24: Good aerial combat skills
+a25: Ability to support attacks
+a26: Discipline in defense
+Midfielder (Midfielder)
+a27: Ability to control the pace of the match
+a28: Accurate short passing ability
+a29: Ability to dribble to escape pressing
+a30: Good long passing ability
+a31: Ability to score goals from a distance
+Forward
+a32: Good goalscoring instincts
+a33: Ability to move intelligently without the shadow
+a34: Ability to create space
+a35: Diverse finishing skills
+a36: Ability to choose good locations
 
 
-4. Luật suy diễn
+4. Law of inference
 
-Mỗi luật suy diễn có dạng: event1, event2, ... -> player_id
+Each inference rule has the form: event1, event2, ... -> player_id
 
-Ví dụ: a1, a2, a3 -> b1 nghĩa là nếu cầu thủ có các đặc điểm a1, a2, a3 thì hệ thống sẽ gợi ý cầu thủ b1.
+For example: a1, a2, a3 -> b1 means that if a player has the characteristics a1, a2, a3, the system will suggest player b1.
 
-5. Ví dụ minh họa
+5. Illustrative example
 
-Giả sử người dùng chọn các đặc điểm: "Thuận hai chân", "Kỹ thuật tốt", "Thể lực cao". Hệ thống sẽ tìm kiếm các luật có chứa các sự kiện tương ứng (ví dụ: a1, a2, a3) và đưa ra gợi ý cầu thủ phù hợp (ví dụ: b1).
+Suppose the user selects the characteristics: "Bipedal", "Good technique", "High physical strength". The system will search for rules containing corresponding events (e.g. a1, a2, a3) and suggest suitable players (e.g. b1).
