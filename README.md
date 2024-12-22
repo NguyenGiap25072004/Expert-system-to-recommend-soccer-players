@@ -7,85 +7,122 @@ Midterm project assignment for introductory artificial intelligence course
 
 1. Introduction
 
-System goal: Build an expert system capable of suggesting soccer players based on the characteristics the user desires.
+   - System goal: Build an expert system capable of suggesting soccer players based on the characteristics the user desires.
 
-System benefits:
+   - System benefits:
 
-Support users to find players that match their requirements quickly and effectively.
+      + Support users to find players that match their requirements quickly and effectively.
 
-Provides detailed information about the player, including attributes, skills and stats.
+      + Provides detailed information about the player, including attributes, skills and stats.
 
-Helps users make decisions in player selection, for example in a football management game or real-life player selection.
+      + Helps users make decisions in player selection, for example in a football management game or real-life player selection.
 
-Approach: Use rule-based reasoning to suggest players.
+   - Approach: Use rule-based reasoning to suggest players.
+     
 2. System architecture
 
-The system includes 3 main components:
+   - The system includes 3 main components:
 
-Knowledge base:
-The set of events (player characteristics) is stored in the events.csv file.
+   - Knowledge base:
+     
+      + The set of events (player characteristics) is stored in the events.csv file.
 
-The set of players and their details are stored in the players.csv file.
+      + The set of players and their details are stored in the players.csv file.
 
-A set of inference rules, each of which associates a set of events with a specific player, is stored in the rules.csv file.
+      + A set of inference rules, each of which associates a set of events with a specific player, is stored in the rules.csv file.
 
-Inference tools:
+   - Inference tools:
 
-Uses forward inference to find players that match the events (characteristics) the user has selected.
+      + Uses forward inference to find players that match the events (characteristics) the user has selected.
 
-Go through the rules, checking whether the set of input events matches the set of events in the rule. If there is a match, the corresponding player in the rules will be included in the results list.
+      + Go through the rules, checking whether the set of input events matches the set of events in the rule. If there is a match, the corresponding player in the rules will be included in the results list.
 
-User interface:
+   - User interface:
 
-Built using the Tkinter library, providing users with the following functions:
+      + Built using the Tkinter library, providing users with the following functions:
 
-Select desired player characteristics.
+      + Select desired player characteristics.
 
-See list of suggested players.
+      + See list of suggested players.
 
-Add, delete, edit inference rules.
+      + Add, delete, edit inference rules.
 
-Add, delete, edit events (player characteristics).
+      + Add, delete, edit events (player characteristics).
 
 3. Detailed description of components
    
-Evaluate players through:
+   Evaluate players through:
 
-General characteristics:
-a1: Bipedal 
-a2: Good technique 
-a3: High physical strength 
-a4: Fast speed 
-a5: Good passing ability 
-a6: Accurate finishing skills 
-a7: Outstanding height 
-a8: Young and healthy 
-a9: Excellent defense ability 
-a10: Long passing skills 
-a11: Ability to predict situations well 
-a12: Good ability to play first ball 
-a13: Good ball control ability 
-a14: Good leadership ability 
-a15: Ability to react quickly 
-a16: Good vision
-Goalkeeper
-a17: Excellent reflexes
-a18: Ability to command the defense
-a19: High ball catching skill
-a20: Ability to play the ball accurately
-a21: Ball handling skills with your feet
-Defender
-a22: Ability to closely mark people
-a23: Ability to tackle effectively
-a24: Good aerial combat skills
-a25: Ability to support attacks
-a26: Discipline in defense
-Midfielder (Midfielder)
-a27: Ability to control the pace of the match
-a28: Accurate short passing ability
-a29: Ability to dribble to escape pressing
-a30: Good long passing ability
-a31: Ability to score goals from a distance
+   - General characteristics:
+
+      + a1: Bipedal
+      
+      + a2: Good technique
+     
+      + a3: High physical strength 
+
+      + a4: Fast speed 
+
+      + a5: Good passing ability 
+
+      + a6: Accurate finishing skills 
+
+      + a7: Outstanding height 
+
+      + a8: Young and healthy 
+
+      + a9: Excellent defense ability 
+
+      + a10: Long passing skills 
+
+      + a11: Ability to predict situations well 
+
+      + a12: Good ability to play first ball 
+
+      + a13: Good ball control ability 
+
+      + a14: Good leadership ability 
+
+      + a15: Ability to react quickly 
+
+      + a16: Good vision
+
+   - Goalkeeper:
+
+      + a17: Excellent reflexes
+
+      + a18: Ability to command the defense
+
+      + a19: High ball catching skill
+
+      + a20: Ability to play the ball accurately
+
+      + a21: Ball handling skills with your feet
+
+   - Defender:
+
+      + a22: Ability to closely mark people
+
+      + a23: Ability to tackle effectively
+
+      + a24: Good aerial combat skills
+
+      + a25: Ability to support attacks
+
+      + a26: Discipline in defense
+
+      + Midfielder (Midfielder)
+
+      + a27: Ability to control the pace of the match
+
+      + a28: Accurate short passing ability
+
+      + a29: Ability to dribble to escape pressing
+
+      + a30: Good long passing ability
+
+      + a31: Ability to score goals from a distance
+
 - Forward:
 
    + a32: Good goalscoring instincts
@@ -94,7 +131,7 @@ a31: Ability to score goals from a distance
 
    + a34: Ability to create space
 
-   +a35: Diverse finishing skills
+   + a35: Diverse finishing skills
 
    + a36: Ability to choose good locations
 
