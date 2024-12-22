@@ -148,10 +148,12 @@ Midterm project assignment for introductory artificial intelligence course
   
 Note: Deployment: 
 
-You need to download the python padas and pillow libraries first
-pip install pandas
-pip install 
+- You need to download the python padas and pillow libraries first
 
-Then download all the code above and run the main.py file
+   + pip install pandas
 
-Good luck <3!
+   + pip install 
+
+- Then download all the code above and run the main.py file
+
+Good luck and have fun <3!
